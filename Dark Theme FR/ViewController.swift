@@ -17,8 +17,39 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // twitter type keyboard
+        textView.keyboardType = .twitter
+        
+        // dark keyboard theme
+        textView.keyboardAppearance = .dark
+        
+        // swipe gesture
+        let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(didSwipeDown(_:)))
+        
+        // which swipe direction
+        swipeGesture.direction = .down
+        
+        // add swipe gesture recognizer to textview
+        self.textView.addGestureRecognizer(swipeGesture)
+    }
+    
+    // user swipes down gesture
+    @objc func didSwipeDown(_ sender: UISwipeGestureRecognizer) {
+        // if swipe gesture is down
+        if sender.direction == .down {
+            self.view.endEditing(true)
+        }
+    }
+    
+    // view appears
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // when user taps on screen it can do something - First Responder
+        // false by default, do not call view if not on the display
+        if self.textView.canBecomeFirstResponder {
+            self.textView.becomeFirstResponder()
+        }
     }
 
-
 }
-
