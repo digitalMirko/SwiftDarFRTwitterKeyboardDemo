@@ -20,7 +20,7 @@ Details and the screen cap images of the app in use can be found on <a href="htt
 Screen Cap on a iPhone Xr device:(shown below)</br>
 (Left image)App Started, dark-themed Twitter keyboard automatically pops up.<br>
 (Middle Image)Text typed via popup keyboard into the TextView.<br>
-(Right image)Swipe down gesture closes popup keyboard.<br>
+(Right image) Swipe down gesture closes popup keyboard.<br>
   <p>
   <img align="left" src="https://github.com/digitalMirko/SwiftDarFRTwitterKeyboardDemo/blob/master/github-iphoneSwiftDarkFRKeyboardDemo01.jpg?raw=true" width="246"/>
   <img align="left" src="https://github.com/digitalMirko/SwiftDarFRTwitterKeyboardDemo/blob/master/github-iphoneSwiftDarkFRKeyboardDemo02.jpg?raw=true" width="246"/>
